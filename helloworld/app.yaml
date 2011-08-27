@@ -4,6 +4,20 @@ runtime: python
 api_version: 1
 
 handlers:
-- url: /.*
+- url: /main
   script: helloworld.py
 
+- url: /user
+  script: users.py
+
+- url: /form
+  script: form.py
+
+- url: /stylesheets
+  static_dir: stylesheets
+- url: /
+  script: guest_book.py
+- url: /guest_book
+  script: guest_book.py
+- url: /sign
+  script: guest_book.py
